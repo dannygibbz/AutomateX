@@ -72,7 +72,6 @@
   
   .hero h1 {
     font-size: 4.9rem;
-    margin-bottom: 20px;
     color: white;
     font-weight: 400;
     line-height: 5.5rem;
@@ -113,7 +112,6 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    margin-bottom: 20px;
     height: 100vh;
     display: flex;
   }
@@ -127,10 +125,13 @@
   .consultation-button{
     margin-top: 40px;
     height: 45px;
-  
-  background-image: linear-gradient(to right, #e08c17, #ebd403 );
-  width: 20rem;
- 
+    background-image: linear-gradient(to right, #e08c17, #ebd403 );
+    width: 20rem;
+  }
+
+  .consultation-button:hover{
+    cursor: pointer;
+    opacity: .9;
   }
 
   .consultation-button p{
@@ -149,7 +150,92 @@
     font-size: 20px;
     color: white;
   }
+
+  .container {
+    width: 90%;
+    max-width: 120rem;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .section-heading {
+    text-align: center;
+    margin-bottom: 10rem;
+  }
   
+  .section-heading h1 {
+    font-size: 3.5rem;
+    font-weight: 300;
+    position: relative;
+    margin-bottom: 1rem;
+    color: #f39d2e;
+  }
+  
+  .has-margin-right {
+    margin-right: 5rem;
+  }
+
+ 
+
+  .portfolio{
+    background-image: url("about-us-bg.png");
+    color: white;
+  }
+
+  .portfolio-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 5rem;
+    margin-top: ;
+  }
+  
+  .portfolio-item:last-child {
+    margin-bottom: 0;
+  }
+  
+  .portfolio-img {
+    flex: 1;
+  }
+  
+  .portfolio-description {
+   
+  }
+  
+  .portfolio-description h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    margin: 1rem 0;
+  }
+  
+  .portfolio-description h6 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 300;
+    color: #f39d2e;
+  }
+  
+  .portfolio-description .cta {
+    display: inline-block;
+    margin-top: 2.5rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: #3883ff;
+    transform: color 650ms;
+  }
+  
+  .portfolio-description .cta:hover {
+    color: #2f67cd;
+  }
+
+  .section-heading{
+    text-align: center;
+    font-size: 2rem;
+    color: #f39d2e;
+    margin-bottom: 3rem;
+  }
+
   /* Services section */
   .services {
     display: flex;
@@ -195,7 +281,6 @@
   
     .hero-text-content {
       padding: 10px;
-      text-align: center;
     }
   
     .hero h1{
@@ -212,7 +297,22 @@
 
     .icon-div{
         height: 0%;
-        width: 0%
+        width: 0%;
     }
+  
   }
   
+  @media screen and (max-width: 600px) {
+
+    .portfolio-item {
+      flex-direction: column;
+    }
+    .portfolio-img {
+      margin: 0 0 2rem 0;
+    }
+    .portfolio-description {
+      margin: 0;
+      order: 2;
+    }
+  
+}
