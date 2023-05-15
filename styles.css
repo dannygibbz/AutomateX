@@ -96,14 +96,14 @@
     font-size: 1.8rem;
   }
 
-  .icon-div{
+  /* .icon-div{
     background-image: url("AutomateXIcon.png");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   height: 80%;
   width: 70%;
-  }
+  } */
 
   .ai-not-scary-hero {
     text-align: left;
@@ -295,10 +295,7 @@
       width: 100%;
     }
 
-    .icon-div{
-        height: 0%;
-        width: 0%;
-    }
+    
   
   }
   
