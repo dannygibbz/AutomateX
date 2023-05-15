@@ -193,12 +193,26 @@
       padding: 10px;
     }
   
-    .hero {
-      padding: 30px;
+    .hero-text-content {
+      padding: 10px;
+      text-align: center;
     }
   
+    .hero h1{
+        font-size: 4rem;
+    } 
+
+    .mission-statement{
+        font-size: 1.5rem;
+    }
+
     .service {
       width: 100%;
+    }
+
+    .icon-div{
+        height: 0%;
+        width: 0%
     }
   }
   
