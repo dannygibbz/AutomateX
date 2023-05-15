@@ -12,11 +12,7 @@
     background-color: #f1f1f1;
   }
   
-  .container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-  }
+  
   
   /* Header */
   header {
@@ -159,6 +155,10 @@
     position: relative;
   }
 
+  section{
+        padding: 6rem 0;
+  }
+
   .section-heading {
     text-align: center;
     margin-bottom: 10rem;
@@ -236,12 +236,50 @@
     margin-bottom: 3rem;
   }
 
+  .my-skills {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2.5rem;
+    text-align: center;
+    color: white;
+  }
+  
+  .skill {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+  }
+  .skill h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 2rem -2px 2rem 0;
+  }
+  
+  .icon-container {
+    width: 10rem;
+    height: 10rem;
+    border: 3px solid rgb(238, 164, 3);
+    background-color: rgb(217, 214, 214);
+    margin-bottom: 2rem;
+    display: flex;
+    transform: rotate(45deg);
+  }
+  .icon-container i {
+    color: #210070;
+    font-size: 5rem;
+    margin: auto;
+    transform: rotate(-45deg);
+  }
+
   /* Services section */
   .services {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-bottom: 20px;
+    background-image: linear-gradient(to right bottom, #2f4cde, #022426);
   }
   
   .service {
@@ -250,6 +288,10 @@
     padding: 20px;
     margin: 10px;
     text-align: center;
+  }
+
+  .services{
+
   }
   
   .service img {
@@ -275,9 +317,7 @@
   
   /* Media queries for responsiveness */
   @media (max-width: 768px) {
-    .container {
-      padding: 10px;
-    }
+   
   
     .hero-text-content {
       padding: 10px;
@@ -295,7 +335,13 @@
       width: 100%;
     }
 
-    
+    .services-container {
+        width: 100%;
+        max-width: 120rem;
+        height: 100%;
+        margin: 0 auto;
+        position: relative;
+      }
   
   }
   
